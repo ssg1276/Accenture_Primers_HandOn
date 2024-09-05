@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Basic Information Form</title>
+    <style>
+      form {
+        width: 600px;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      legend {
+        font-weight: bold;
+        padding: 0 10px;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        padding: 10px;
+      }
+
+      input[type='text'],
+      input[type='email'] {
+        width: 95%;
+        padding: 5px;
+      }
+
+      input[type='submit'] {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- Personal Information Fieldset -->
+      <fieldset id="personal">
+        <legend id="personallegend">Personal Information</legend>
+        <table>
+          <tr>
+            <td><label for="employeename">Employee Name</label></td>
+            <td>
+              <input
+                type="text"
+                id="employeename"
+                placeholder="Enter the employee name"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="employeeid">Employee Id</label></td>
+            <td>
+              <input
+                type="text"
+                id="employeeid"
+                placeholder="Enter the employee id"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="aadharnumber">Aadhar Number</label></td>
+            <td>
+              <input
+                type="text"
+                id="aadharnumber"
+                placeholder="Enter the aadhar number"
+                pattern="\d{4}-\d{4}-\d{4}"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Enter Email</label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter the email"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <!-- Current Position Fieldset -->
+      <fieldset id="current">
+        <legend id="currentlegend">Current Position</legend>
+        <table>
+          <tr>
+            <td><label for="department">Department</label></td>
+            <td><input type="text" id="department" required /></td>
+          </tr>
+          <tr>
+            <td><label for="designation">Designation</label></td>
+            <td><input type="text" id="designation" required /></td>
+          </tr>
+          <tr>
+            <td><label for="location">Location</label></td>
+            <td><input type="text" id="location" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <!-- Previous Employment Fieldset -->
+      <fieldset id="previous">
+        <legend id="previouslegend">Previous Employment</legend>
+        <table>
+          <tr>
+            <td><label for="employer">Employer</label></td>
+            <td><input type="text" id="employer" required /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="employerdesignation">Employer Designation</label>
+            </td>
+            <td><input type="text" id="employerdesignation" required /></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <!-- Submit Button -->
+      <input id="submit" type="submit" value="Save & continue" />
+    </form>
+  </body>
+</html>
