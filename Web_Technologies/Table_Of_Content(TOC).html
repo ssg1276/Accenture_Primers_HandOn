@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Index Layout</title>
+    <style>
+      /* Style for splitting the layout */
+      .split {
+        width: 50%;
+        position: absolute;
+        height: 100%;
+        overflow-y: auto;
+      }
+      .left {
+        left: 0;
+        border-right: 1px solid #000;
+        padding: 20px;
+      }
+      .right {
+        right: 0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Left Split: Links Section -->
+    <div class="split left">
+      <ul id="links" style="list-style-type: none">
+        <li>
+          <a href="#overview" id="link1"><p>HTML5 Overview</p></a>
+        </li>
+        <li>
+          <a href="#syntax" id="link2"><p>HTML5 Syntax</p></a>
+        </li>
+        <li>
+          <a href="#attributes" id="link3"><p>HTML5 Attributes</p></a>
+        </li>
+        <li>
+          <a href="#events" id="link4"><p>HTML5 Events</p></a>
+        </li>
+        <li>
+          <a href="#forms" id="link5"><p>HTML5 Web Forms 2.0</p></a>
+        </li>
+        <li>
+          <a href="#advd" id="link6"><p>HTML5 Audio & Video</p></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Split: Table of Contents Section -->
+    <div class="split right">
+      <header>
+        <h2>Table of Contents</h2>
+      </header>
+      <ol>
+        <li>
+          <p id="overview">HTML5 OVERVIEW</p>
+          <ul>
+            <li><p>Introduction to HTML5</p></li>
+            <li><p>History of HTML</p></li>
+            <li><p>Features of HTML5</p></li>
+          </ul>
+        </li>
+        <li>
+          <p id="syntax">HTML5 SYNTAX</p>
+          <ul>
+            <li><p>HTML5 Doctype</p></li>
+            <li><p>New Elements in HTML5</p></li>
+            <li><p>Structural Elements</p></li>
+          </ul>
+        </li>
+        <li>
+          <p id="attributes">HTML5 ATTRIBUTES</p>
+          <ul>
+            <li><p>Global Attributes</p></li>
+            <li><p>Data Attributes</p></li>
+            <li><p>Custom Data Attributes</p></li>
+          </ul>
+        </li>
+        <li>
+          <p id="events">HTML5 EVENTS</p>
+          <ul>
+            <li><p>Mouse Events</p></li>
+            <li><p>Keyboard Events</p></li>
+            <li><p>Form Events</p></li>
+          </ul>
+        </li>
+        <li>
+          <p id="forms">HTML5 WEB FORMS 2.0</p>
+          <ul>
+            <li><p>New Input Types</p></li>
+            <li><p>New Form Elements</p></li>
+            <li><p>Form Validation</p></li>
+          </ul>
+        </li>
+        <li>
+          <p id="advd">HTML5 AUDIO & VIDEO</p>
+          <ul>
+            <li><p>Audio Element</p></li>
+            <li><p>Video Element</p></li>
+            <li><p>Supported Formats</p></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
